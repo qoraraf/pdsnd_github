@@ -7,10 +7,11 @@
 Git project for PDSP ND
 
 ### Description
-Describe what your project is about and what it does
+This project is a training to master GIT and GIThub
 
 ### Files used
-Include the files used
+bikeshare.py
+3 csv files which are gitignored
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
