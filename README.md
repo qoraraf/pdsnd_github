@@ -14,5 +14,8 @@ bikeshare.py
 3 csv files which are gitignored
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+This is a great project from Udacity for the nanodegree of programming for DS with python
+I recommend this course for every beginner to data science. Find the link to the course here:
+https://www.udacity.com/course/programming-for-data-science-nanodegree--nd104
+Also I have learned a lot from other sites like https://www.atlassian.com/git/tutorials.
 
