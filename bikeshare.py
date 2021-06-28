@@ -11,7 +11,9 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 
 
 def display_raw_data(df):
-    """ Your docstring here """
+    """ Ask user wether to display 5 rows of the dataframe or not 
+        Function returns: df
+    """
     i = 0
     raw = str(input("Would you like to see raw data? Type Yes or No:\n").strip().lower())
     
