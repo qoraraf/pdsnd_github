@@ -228,6 +228,11 @@ def main(): # main function where we call all other functions
 
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
+        while True:
+            if restart not in ("yes", "no"):
+                restart = str(input("Your input is invalid!, please Type Yes or No:\n").strip().lower())
+            else:
+                break
         if restart.lower() != 'yes':
             break
             
