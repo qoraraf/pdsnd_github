@@ -138,7 +138,7 @@ def time_stats(df):
     mostCommonHour = df['hour'].mode()[0]
     print("\nMost common start hour:\n{}".format(mostCommonHour))
     
-    print("\nThis took %s seconds." % "{:.5f}".format(time.time() - start_time))
+    print("\nThis took %s seconds." % "{:.7f}".format(time.time() - start_time))
     print('-'*40)
  
 def station_stats(df):
@@ -160,7 +160,7 @@ def station_stats(df):
     #mostPopularTrip = ("Station: " + df['Start Station'] + ', and station: ' + df['End Station']).mode()[0] ---another way to do this
     print("\nMost frequent combination of start station and end station trip:\n{}".format(mostPopularTrip))
     
-    print("\nThis took %s seconds." % "{:.5f}".format(time.time() - start_time))
+    print("\nThis took %s seconds." % "{:.7f}".format(time.time() - start_time))
     print('-'*40)
 
 
@@ -181,7 +181,7 @@ def trip_duration_stats(df):
 
 
 
-    print("\nThis took %s seconds." % "{:.5f}".format(time.time() - start_time))
+    print("\nThis took %s seconds." % "{:.7f}".format(time.time() - start_time))
     print('-'*40)
 
 
@@ -212,7 +212,7 @@ def user_stats(df,city): #added city as argument because the columns differ in t
     
 
 
-    print("\nThis took %s seconds." % "{:.5f}".format(time.time() - start_time))
+    print("\nThis took %s seconds." % "{:.7f}".format(time.time() - start_time))
     print('-'*40)
 
 
@@ -231,6 +231,11 @@ def main(): # main function where we call all other functions
 
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
+        while True:
+            if restart not in ("yes", "no"):
+                restart = str(input("Your input is invalid!, please Type Yes or No:\n").strip().lower())
+            else:
+                break
         if restart.lower() != 'yes':
             break
             
